@@ -1,7 +1,10 @@
+import SearchForm from "./components/SearchForm";
+
 function App() {
   return (
     <div className="App">
-      <p>Hacker News</p>
+      <h1>Hacker News</h1>
+      <SearchForm/>
     </div>
   );
 }
