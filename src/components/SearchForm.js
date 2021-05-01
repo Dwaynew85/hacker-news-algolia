@@ -3,13 +3,12 @@ import searchAPI from '../actions/search'
 
 function SearchForm() {
     const [term, setTerm] = useState('')
-
+    
     const handleSubmit = (event) => {
         event.preventDefault();
         searchAPI(term);
         setTerm('')
       };
-
 
     return (
         <form onSubmit={handleSubmit}>
