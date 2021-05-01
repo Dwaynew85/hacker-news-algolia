@@ -1,10 +1,9 @@
-import SearchForm from "./components/SearchForm";
+import HackerNews from "./components/HackerNews";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hacker News</h1>
-      <SearchForm/>
+      <HackerNews/>
     </div>
   );
 }
