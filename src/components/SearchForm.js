@@ -1,11 +1,12 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import searchAPI from '../actions/search'
 
 function SearchForm() {
     const [term, setTerm] = useState('')
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log(term);
+        searchAPI(term);
         setTerm('')
       };
 
