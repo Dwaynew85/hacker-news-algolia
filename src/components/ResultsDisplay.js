@@ -7,16 +7,14 @@ function ResultsDisplay({result}) {
         const date = currentDate.toDateString()
         const time = currentDate.toLocaleTimeString()
         return <h6>created: {date + ' ' + time}</h6>
-
     }
-    console.log(result)
+    
     return (
-        <div>
-            
+        <div>            
             <a href={result.url} target="_blank" rel="noreferrer"><h2>{result.title}</h2></a>
             <p>by: {result.author}</p>
-            <p>{convertDate(result)}</p>
-            
+            {convertDate(result)}
+            <br/>
         </div>
     )
 }
